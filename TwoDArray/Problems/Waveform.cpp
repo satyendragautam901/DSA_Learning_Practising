@@ -4,14 +4,31 @@ using namespace std;
 
 void PrintWaveform(int ar[][4], int row, int col)
 {
-    for (int i = 0; i < row; i++)
+    // for (int i = 0; i < row; i++)
+    // {
+    //     for(int j = 0; j<col; j++){
+    //         cout<<setw(3)<<ar[i][j]<<" ";
+    //     }
+    //     cout<<endl;
+    // }
+
+    for (int j = 0; j < col; j++)
     {
-        for(int j = 0; j<col; j++){
+        if (j % 2 == 0)
+        {
+            for (int i = 0; i < row; i++)
+            {
+                cout << setw(3) << ar[i][j] << " ";
+            }
+        }
+
+        else{
+            for(int i = row-1; i>=0; i--){
             cout<<setw(3)<<ar[i][j]<<" ";
         }
-        cout<<endl;
+        }
+        cout << endl;
     }
-
 }
 
 int main()

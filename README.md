@@ -100,15 +100,16 @@ This is an active learning repo. I regularly update it as I explore new topics o
 
 ---
 
-## 📫 Contact
+## 🙌 Let’s Connect
 
 Feel free to connect or discuss DSA topics:
-- GitHub: https://github.com/satyendragautam901
+- 🔗 GitHub: https://github.com/satyendragautam901
+💼 LinkedIn: https://www.linkedin.com/in/satyendra-gautam-525220244/
 
 
 ---
 
-## 🌟 Star this repo if you find it helpful!
+## 📌 Feel free to ⭐ star the repo if you find it helpful!
 
 
 

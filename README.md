@@ -43,18 +43,7 @@ As a Computer Science graduate and a software developer, I strongly believe in m
 - ✍️ Well-commented code for revision and sharing
 <!-- - 💡 Covers patterns commonly asked in interviews (sliding window, recursion to DP, etc.) -->
 
-├── Array/
-├── BinarySearch
-├── Linkedlist/
-├── Pattern
-├── PrefixAndSuffix
-├── Recursion
-├── Sort
-├── String
-├── SubArray
-├── TrappinRain
-├── TwoDArray
-├── TwoPointer
+
 
 <!-- ├── Recursion/
 ├── Sorting/
@@ -68,12 +57,25 @@ As a Computer Science graduate and a software developer, I strongly believe in m
 ├── TwoPointer/
 ├── BitManipulation/
 ├── DynamicProgramming/ -->
-└── README.md
+
 
 ---
 ## 🗂️ Topics Covered
 
 This repo is organized topic-wise. Each folder contains problem implementations and variations.
+- `Array/`
+- `BinarySearch/`
+- `Linkedlist/`
+- `Pattern/`
+- `PrefixAndSuffix/`
+- `Recursion/`
+- `Sort/`
+- `String/`
+- `SubArray/`
+- `TrappingRain/`
+- `TwoDArray/`
+- `TwoPointer/`
+- `README.md`
 
 
 ## 💬 How to Use

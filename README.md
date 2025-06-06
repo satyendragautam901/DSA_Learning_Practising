@@ -1,11 +1,21 @@
-# 🚀 DSA Learning Journey by Satyendra Gautam
+# 🧠 DSA Learning & Practice Journey by Satyendra Gautam
 
-Welcome to my **Data Structures and Algorithms (DSA)** repository!  
-This repo contains my hands-on practice, problem-solving code, and notes as I deepen my understanding of core Computer Science concepts using **C++**.
+Welcome to my **Data Structures and Algorithms (DSA)** learning repository.  
+This repository is a structured collection of my daily/weekly practice problems written in **C++**, covering all core DSA concepts required for coding interviews and system design fundamentals.
+
+---
+## 📌 About Me
+
+I’m **Satyendra Gautam**, a Computer Science graduate and software developer. I use this repository to:
+
+- Sharpen my problem-solving skills
+- Prepare for technical interviews 
+- Practice writing clean, efficient, and readable C++ code
+- Track my consistency and learning growth publicly
 
 ---
 
-## 🧠 Why This Repo?
+<!-- ## 🧠 Why This Repo?
 
 As a Computer Science graduate and a software developer, I strongly believe in mastering DSA to:
 - Build strong problem-solving skills
@@ -13,7 +23,7 @@ As a Computer Science graduate and a software developer, I strongly believe in m
 - Prepare for technical interviews
 - Strengthen my foundations for system design and real-world applications
 
----
+--- -->
 
 
 
@@ -31,15 +41,47 @@ As a Computer Science graduate and a software developer, I strongly believe in m
 
 - 🔍 Focus on **clarity and code readability**
 - ✍️ Well-commented code for revision and sharing
-- 💡 Covers patterns commonly asked in interviews (sliding window, recursion to DP, etc.)
+<!-- - 💡 Covers patterns commonly asked in interviews (sliding window, recursion to DP, etc.) -->
+
+├── Array/
+├── BinarySearch
+├── Linkedlist/
+├── Pattern
+├── PrefixAndSuffix
+├── Recursion
+├── Sort
+├── String
+├── SubArray
+├── TrappinRain
+├── TwoDArray
+├── TwoPointer
+
+<!-- ├── Recursion/
+├── Sorting/
+├── Searching/
+├── Stack/
+├── Queue/
+├── BinaryTree/
+├── Graph/
+├── Hashing/
+├── SlidingWindow/
+├── TwoPointer/
+├── BitManipulation/
+├── DynamicProgramming/ -->
+└── README.md
 
 ---
+## 🗂️ Topics Covered
+
+This repo is organized topic-wise. Each folder contains problem implementations and variations.
+
 
 ## 💬 How to Use
 
 1. Clone the repo:
     ```bash
     git clone https://github.com/satyendragautam901/DSA_Learning_Practising.git
+   cd DSA_Learning_Practising
     ```
 
 2. Navigate to any topic and open `.cpp` files in your IDE.

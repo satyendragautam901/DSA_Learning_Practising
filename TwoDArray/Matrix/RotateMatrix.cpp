@@ -129,18 +129,53 @@ void RotateMatrix(int ar[][4], int row, int col)
 }
 void RotateMatrixEfficient(int ar[][4], int row, int col)
 {
+    // rotate column wise
+    int start = 0;
+    int end = row - 1;
+
+    while (start < end)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            swap(ar[j][start], ar[j][end]);
+        }
+        start++;
+        end--;
+    }
+
+    // rotate row wise
+    start = 0;
+    end = col-1;
+    while (start < end)
+    {
+        for (int i = 0; i<row; i++)
+        {
+            swap(ar[start][i], ar[end][i]);
+        }
+        start++;
+        end--;
+    }
+
+    for (int i = 0; i < row; i++)
+    {
+        // this loop for column
+        for (int j = 0; j < col; j++)
+        {
+            cout << setw(3) << ar[i][j];
+        }
+
+        cout << endl;
+    }
 }
-
-
 
 int main()
 {
     int ar[4][4] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
-    int ar2[3][3]={1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int ar2[3][3] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
     // RotateMatrixByNinetyDegreeInMemory(ar, 4,4);
 
     // rotate matrix by 180 degree
-    // RotateMatrix(ar,4,4);
+    // RotateMatrix(ar, 4, 4);
 
     // rotate 180 degree more efficient way
     RotateMatrixEfficient(ar, 4, 4);

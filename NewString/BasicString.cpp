@@ -18,6 +18,14 @@ void PrintCharString(char ar[]){
 
 void PrintString(string str){
     cout<<str<<endl;
+    for(auto i = str.begin(); i<str.end(); i++){
+        cout<<*i<<" ";
+    }
+    // for(int i = 0; i<str.size(); i++){
+    //     cout<<str[i]<<" ";
+    // }
+    cout<<endl;
+    
     
     // size of string
     cout<<"The size of string is "<<str.size()<<endl;
@@ -91,10 +99,10 @@ int main()
 
     string str = "Hello";
     string str2 = "World!";
-    // PrintString(str);
+    PrintString(str);
     // Concatenate(str, str2);
 
     // operation on string using built in
-    Operation(str, str2);
+    // Operation(str, str2);
   return 0;
 }

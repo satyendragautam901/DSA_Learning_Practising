@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 void SortString(string str){
@@ -22,9 +23,15 @@ void SortString(string str){
         }
     }
 }
+void SortUsingAlgo(string str){
+    sort(str.begin(), str.end());
+    cout<<str<<endl;
+}
+
 int main()
 {
     string str = "dabphe";
     SortString(str);
+    SortUsingAlgo(str);
   return 0;
 }

@@ -1,6 +1,8 @@
 #include<iostream>
+#include<vector>
 #include<algorithm>
 #include<string>
+#include<typeinfo>
 using namespace std;
 
 // convert roman to integer
@@ -84,7 +86,7 @@ void AddTwoString(string s1, string s2){
         sum = sum + s1[i1] -'0' + s2[i2] -'0' + carry; // '0' will convert to integer
         carry = sum / 10;
         cout<<carry<<" "<<sum<<endl;
-        char ch = '0' + sum % 10;
+        char ch = '0' + sum % 10; // here sum % 10 provide number so we need to convert into character
         ans +=ch;
         i1--;
         i2--;
@@ -114,6 +116,42 @@ void AddTwoString(string s1, string s2){
     cout<<ans<<" "<<i1<<endl;
     
 }
+
+// sort string
+void SortString(string str){
+    vector<string>ans(10);
+    string temp = "";
+    
+    for(int i = 0; i<str.size(); i++){
+        if(i == str.size() || str[i] == ' '){ // '' because str[i] is now character
+            char position = temp.back() ; // extract index;
+
+            // int toInt = int(position); // convert to integer  another method
+            int toInt = position - '0'; // convert to integer
+            temp.pop_back(); // pop number from temp
+
+            ans[toInt] = temp; // at index toint store temp value;
+            temp = "";
+
+        }
+        else{
+            temp.push_back(str[i]);
+        }
+    }
+
+    // now temp have last index value so it is to arrange
+    char ch = temp.back();
+    temp.pop_back();
+    int pos = ch -'0';
+    ans[pos] = temp;
+
+    // cout<<temp<<endl;
+    for(auto ch: ans){
+        cout<<ch<<" ";
+    }
+        
+}
+
 int main()
 {
     // roman to integer
@@ -128,5 +166,9 @@ int main()
     string num1 = "12345";
     string num2 = "897";
     AddTwoString(num1, num2);
+
+    // sort string
+    string sortString = "One2 Two1 Three4 Four3";
+    SortString(sortString);
   return 0;
 }

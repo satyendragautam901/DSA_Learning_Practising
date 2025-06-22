@@ -105,8 +105,9 @@ This is an active learning repo. I regularly update it as I explore new topics o
 ## 🙌 Let’s Connect
 
 Feel free to connect or discuss DSA topics:
-- 🔗 GitHub: https://github.com/satyendragautam901
-💼 LinkedIn: https://www.linkedin.com/in/satyendra-gautam-525220244/
+
+[![Connect on LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/satyendra-gautam-525220244/)
+[![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github)](https://github.com/satyendragautam901)
 
 
 ---

@@ -42,6 +42,14 @@ git stash -u            # stash untracked files too
 git checkout string     # switch to correct branch
 git stash pop           # apply changes
 ```
+2. When i push code on string branch for many days in squash and merge.
+```
+git checkout main # switch to main branch on local
+git pull origin main # update local with remote
+git checkout string(branch name) # checkout to string/branch name
+git rebase main # rebase string branch with updated local main
+git push --force-with-lease # push rebased string to remote
+```
 
 ## 📤 Keeping Local Main Updated
 

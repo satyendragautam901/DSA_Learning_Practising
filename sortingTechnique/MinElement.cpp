@@ -1,7 +1,19 @@
 #include<iostream>
+#include<vector>
 using namespace std;
+
+int MinElementUsingRecursion(vector<int>&ar, int index){
+    if(index == ar.size()-1){
+        return ar[index];
+    }
+
+    return min(ar[index], MinElementUsingRecursion(ar, index + 1));
+}
 int main()
 {
+    vector<int>arr{8,9,2,5,3,7,10};
+    cout<<"min element "<<MinElementUsingRecursion(arr, 0)<<endl;
+
     int ar[] = {8,9,2,5,3,7,1};
 
     // find min element 

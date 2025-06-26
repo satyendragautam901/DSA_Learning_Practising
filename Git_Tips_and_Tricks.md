@@ -50,7 +50,14 @@ git checkout string(branch name) # checkout to string/branch name
 git rebase main # rebase string branch with updated local main
 git push --force-with-lease # push rebased string to remote
 ```
+3. One day i mistakely commit on recurion branch but i do soft delete and then stash 
+```
+git reset --soft HEAD~1
+git stash -u
+git checkout recursion
+git stash pop
 
+```
 ## 📤 Keeping Local Main Updated
 
 After PR is merged to main on GitHub:

@@ -58,6 +58,14 @@ git checkout recursion
 git stash pop
 
 ```
+4. If the work on a branch is done then delete that branch locally and remotely.
+```
+git checkout main 
+git branch -d branch-name  # Delete locally (if fully merged)
+git push origin --delete branch-name  # Delete remotely
+
+
+```
 ## 📤 Keeping Local Main Updated
 
 After PR is merged to main on GitHub:

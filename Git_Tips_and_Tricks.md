@@ -66,6 +66,17 @@ git push origin --delete branch-name  # Delete remotely
 
 
 ```
+4. I have deleted branch from local and remote yet show branches
+```
+git branch -a/-r     # shows all local + remote tracking branches
+git remote prune origin # delete branches which are not on remote and remove from local cache
+
+```
+5. After squash and merged when i delete branch it show error
+```
+git branch -D <branch_name>   # force delete
+
+```
 ## 📤 Keeping Local Main Updated
 
 After PR is merged to main on GitHub:

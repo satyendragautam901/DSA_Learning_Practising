@@ -8,7 +8,7 @@ Find next min if no then -1;
 {1,3,2} then {3,2,-1};
 */
 
-void FindNextMin(vector<int> &ar){
+void FindNextMax(vector<int> &ar){
 
     vector<int>ans(ar.size(), -1);
     stack<int>st; // keep track of latest index
@@ -39,6 +39,6 @@ void FindNextMin(vector<int> &ar){
 int main()
 {
     vector<int>ar{1,9,12,10,14};
-    FindNextMin(ar);
+    FindNextMax(ar);
   return 0;
 }

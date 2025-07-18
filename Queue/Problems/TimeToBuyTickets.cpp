@@ -26,12 +26,27 @@ void TimeToBuy(vector<int>&ar,int k){
 
         q.pop(); // pop so that next person in the line get ticket
     }
-    cout<<"Time to buy ticket for "<<k<<" is "<<time<<endl;
+    
 
+}
+
+void TimeToBuyEfficient(vector<int>&ar, int k){
+    int time = 0;
+    for(int i = 0; i<ar.size(); i++){
+        if(i<=k){
+            time = time + min(ar[i], ar[k]);// before k at max k times got ticket
+        }
+        else{
+            time = time + min(ar[k]-1, ar[i]); // only k-1 at max .
+        }
+    }
+
+    cout<<"Time to buy ticket for "<<k<<" is "<<time<<endl;
 }
 int main()
 {
-    vector<int>ar{2,3,2};
-    TimeToBuy(ar, 2);
+    vector<int>ar{2,6,4,3,7};
+    //TimeToBuy(ar, 2);
+    TimeToBuyEfficient(ar,2);
   return 0;
 }

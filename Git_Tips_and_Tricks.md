@@ -77,6 +77,16 @@ git remote prune origin # delete branches which are not on remote and remove fro
 git branch -D <branch_name>   # force delete
 
 ```
+
+6. Today when i try to push to github do reject my push 
+```
+# don't use variable names like api, secret,token, password, api_key.
+# github understand that this is secret key i don't have to push, so it warns you are pushing secret key .
+
+$env:GIT_PUSH_OPTION_SKIP_SECRETS="true" # To bypass secret scanning just for this push
+git push -u origin leetcode
+
+```
 ## 📤 Keeping Local Main Updated
 
 After PR is merged to main on GitHub:

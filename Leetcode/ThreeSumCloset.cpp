@@ -33,6 +33,9 @@ void ThreeSumClosestEfficient(vector<int> &ar, int target){
     int n = ar.size();
     int closest = ar[0] + ar[1] + ar[2];
 
+    sort(ar.begin(), ar.end()); // first step to sort 
+
+    
     for(int i = 0; i<n-2; i++){
         int first = i+1; 
         int last = n-1;

@@ -87,6 +87,16 @@ $env:GIT_PUSH_OPTION_SKIP_SECRETS="true" # To bypass secret scanning just for th
 git push -u origin leetcode
 
 ```
+7. today i mistakely write and wrong commit message eg: crus -> crud
+```
+# this for local
+git commit --amend -m"updated commit message" # this will set new commit message
+
+# this if i do push commit to remote 
+git commit --amend -m "updated commit message"
+git push -f origin <branch-name>
+
+```
 ## 📤 Keeping Local Main Updated
 
 After PR is merged to main on GitHub:

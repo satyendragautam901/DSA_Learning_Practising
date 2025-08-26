@@ -22,16 +22,21 @@ int main()
     //     cout<<i<<" ";
     // }
 
-    while (0) // this will not execute bcz of '0'
-    {
-        cout<<"This is ";
-    }
+    // while (0) // this will not execute bcz of '0'
+    // {
+    //     cout<<"This is ";
+    // }
 
-    while (1) // this is always return true 
-    {
-        cout<<"This is inifinite loop "<<endl;
-    }
+    // while (1) // this is always return true 
+    // {
+    //     cout<<"This is inifinite loop "<<endl;
+    // }
     
+    int j = 3;
+    while (j)
+    {
+        cout<<--j<<" ";
+    }
     
 
   return 0;

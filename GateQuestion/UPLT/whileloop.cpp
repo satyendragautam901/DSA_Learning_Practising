@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int i = 5;
+    //int i = 5;
     // when there is 0 in while then it breaks
 
 
@@ -32,11 +32,17 @@ int main()
     //     cout<<"This is inifinite loop "<<endl;
     // }
     
-    int j = 3;
-    while (j)
-    {
-        cout<<--j<<" ";
+    // int j = 3;
+    // while (j)
+    // {
+    //     cout<<--j<<" ";
+    // }
+
+    int i = 3; 
+    do{
+        cout<<i<<" ";
     }
+    while(i--);
     
 
   return 0;
